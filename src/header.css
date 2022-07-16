@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    height: 75px;
+    width: 100%;
+
+}
+.nav-logo{
+    color: wheat;
+    flex: 20%;
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+
+.nav-options{
+    flex: 50%;
+    text-align: right;
+    padding-right: 100px;
+}
+.nav-options li{
+    display: inline;
+    padding-left: 30px;
+    line-height: 75px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif
+
+
+}
+.nav-options li a{
+
+    text-decoration: none;
+    color:white
+}
+
+.nav-options li a:hover{
+
+    text-decoration: underline;
+    color:black
+}
+
+.nav-options ul{
+    height: 75px;
+    margin: 0;
+    padding: 0;  
+    padding-right: 20px;
+    text-align: right;
+    
+}
+
+.header-container{
+    height: 500px;
+    width: 100%;
+    background-color: #FA4B4B;
+}
