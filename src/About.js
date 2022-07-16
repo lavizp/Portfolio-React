@@ -1,6 +1,6 @@
 import React from 'react'
-import './about.css'
-import LavizPic from './Laviz2.jpg'
+import './styles/about.css'
+import LavizPic from './assets/Laviz2.jpg'
 
 export default function About({title,myDesc}) {
   return (
