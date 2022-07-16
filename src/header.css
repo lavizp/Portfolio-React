@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     height: 75px;
     width: 100%;
+    background-color: #FA4B4B;
 
 }
 .nav-logo{
@@ -38,7 +39,6 @@
 .nav-options li a:hover{
 
     text-decoration: underline;
-    color:black
 }
 
 .nav-options ul{
@@ -51,7 +51,33 @@
 }
 
 .header-container{
-    height: 500px;
+    height: 400px;
     width: 100%;
     background-color: #FA4B4B;
+    display: flex;
+}
+  
+.header-info{
+    flex: 50%;
+    text-align: left;
+    padding-left: 30%;
+    margin-top: 20px;
+}
+
+.header-info h2{
+    margin: 0;
+    font-size: 30px;
+    color: burlywood;
+}
+.header-info h1{
+    margin: 0;
+    font-size: 50px;
+    color: wheat;
+}
+
+.myImage{
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 50px;
 }
