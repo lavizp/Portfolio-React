@@ -7,7 +7,7 @@ export default function Navbar() {
        <div className='nav-logo'>Laviz</div> 
        <div className='nav-options'>
             <ul>
-                <li><Link to>About</Link></li>
+                <li><a href ="#about-container">About</a></li>
                 <li><Link to>Skills</Link></li>
                 <li><Link to>Projects</Link></li>
                 <li><Link to>Contact</Link></li>
