@@ -1,0 +1,17 @@
+.about-container{
+    width: 100%;
+    height: 500px;
+}
+
+.about-container h1{
+    text-align: center;
+    font-size: 45px;
+    color: #FA4B4B;
+}
+.about-box{
+    background-color: #FA4B4B;
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    display: flex;
+}
