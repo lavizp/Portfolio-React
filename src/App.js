@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import About from './components/About';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
         <>
           <Homepage/>
           <About title={aboutTitle} myDesc={aboutDescription}/>
+          <Skills/>
         </>
-      }></Route>
+      } />
       </Routes>
    <Footer/>
 

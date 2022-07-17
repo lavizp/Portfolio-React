@@ -1,0 +1,11 @@
+.skill-container{
+    margin: auto;
+    height: 100px;
+    width: 80%;
+    background-color: rebeccapurple;
+}
+
+.skills-container h1 {
+    color: #FA4B4B;
+    text-align: center;
+}
