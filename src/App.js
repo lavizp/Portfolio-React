@@ -1,8 +1,9 @@
 import './styles/App.css';
-import Homepage from './Homepage';
+import Homepage from './components/Homepage';
 import { Route, Routes } from 'react-router-dom'
-import Navbar from './Navbar'
-import About from './About';
+import Navbar from './components/Navbar'
+import About from './components/About';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         </>
       }></Route>
       </Routes>
+   <Footer/>
+
    </div>
     
   );

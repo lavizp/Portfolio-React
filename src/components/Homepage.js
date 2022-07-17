@@ -1,6 +1,6 @@
 import React from 'react'
-import "./styles/header.css"
-import lavizPhoto from"./assets/Laviz.png"
+import "../styles/header.css"
+import lavizPhoto from"../assets/Laviz.png"
 
 export default function Homepage() {
   return (
