@@ -7,10 +7,10 @@ export default function Navbar() {
        <div className='nav-logo'>Laviz</div> 
        <div className='nav-options'>
             <ul>
-                <li><a href ="#about-container">About</a></li>
-                <li><a href='#skills-container'>Skills</a></li>
-                <li><Link to >Projects</Link></li>
-                <li><Link to>Contact</Link></li>
+                <li><a href ="/#about-container">About</a></li>
+                <li><a href='/#skills-container'>Skills</a></li>
+                <li><Link to = {'/projects'}>Projects</Link></li>
+                <li><Link to = {'./#skills-container'}>Contact</Link></li>
 
             </ul>
        </div>

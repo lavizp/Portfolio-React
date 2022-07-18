@@ -6,6 +6,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import LavizPic from './assets/Laviz.png'
 import { 
   FaUnity,
   FaReact
@@ -30,11 +31,15 @@ let projectLists = [
   {
     "title": "Throctor",
     "description": "A device that takes thermal images of a patients throat to detect thyroid diseases using machine learning. I won the Microsoft Imagine Cup National Finals 2022- Health Catogery with this project",
+    "image": 'https://i.ytimg.com/an_webp/QoV-fDWU2Gk/mqdefault_6s.webp?du=3000&sqp=CJ7j1ZYG&rs=AOn4CLDB-DMISP2HvjioiVMqUgY0f2lTeA',
+    "link":'https://www.youtube.com/watch?v=QoV-fDWU2Gk',
+    codeLink:'https://www.youtube.com'
   },
   {
     "title": "Cube Surfers Endless",
     "description": "I remade a famous mobile game and added my own twist, an endless mode to it",
-
+    "image": "https://play-lh.googleusercontent.com/KkhT634qxisCzEXsokuqSOeNFW-oZhIlWtO7VWijJayjHstjxUQFWLIgEYLPLvraLEyA=w416-h235-rw",
+    "link": 'https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy'
   }
 ]
 
