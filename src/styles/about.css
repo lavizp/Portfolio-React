@@ -1,6 +1,6 @@
 .about-container{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 
 .about-container h1{
@@ -12,7 +12,7 @@
     background-color: #FA4B4B;
     margin: auto;
     width: 85%;
-    height: 400px;
+    height: 70%;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,8 @@
 .about-picture{
     width: 300px;
     text-align: right;
-    display: flex;
+    margin: auto;
+    margin-right: 20px;
 
     
 }

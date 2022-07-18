@@ -1,11 +1,40 @@
 .skill-container{
     margin: auto;
-    height: 100px;
+    height: 150px;
     width: 80%;
-    background-color: rebeccapurple;
+    background-color: #FA4B4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .skills-container h1 {
     color: #FA4B4B;
     text-align: center;
+}
+
+.skill-logo{
+    flex: 30%;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    size: 10em;
+}
+
+.skill-deatils{
+    flex:70%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.skill-deatils h1{
+    color: #00A4CCFF;
+
+    text-align: center;
+    margin:0px;
 }

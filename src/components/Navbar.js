@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/header.css"
-import {  Route,Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className='navbar'>
@@ -8,8 +8,8 @@ export default function Navbar() {
        <div className='nav-options'>
             <ul>
                 <li><a href ="#about-container">About</a></li>
-                <li><Link to>Skills</Link></li>
-                <li><Link to>Projects</Link></li>
+                <li><a href='#skills-container'>Skills</a></li>
+                <li><Link to >Projects</Link></li>
                 <li><Link to>Contact</Link></li>
 
             </ul>
