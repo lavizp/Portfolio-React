@@ -6,13 +6,33 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import LavizPic from './assets/Laviz.png'
+import Contacts from './components/Contacts';
 import { 
   FaUnity,
-  FaReact
+  FaReact,
+  FaLinkedinIn,
+  FaGithub,
+  FaInstagram
  } from "react-icons/fa";
 
+let contactList = [
+  {
+    "logo": <FaLinkedinIn/>,
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/laviz-pandey-4b8b55208/"
+  },
+  {
+    "logo": <FaGithub/>,
+    "name": "Github",
+    "link": "https://github.com/lavizp"
+  },
+  {
+    "logo": <FaInstagram/>,
+    "name": "Instagram",
+    "link": "https://www.instagram.com/lavizpandey/"
+  }
 
+]
 let skillsList = [
   {
     "title": "Unity C# Developer",
@@ -31,15 +51,17 @@ let projectLists = [
   {
     "title": "Throctor",
     "description": "A device that takes thermal images of a patients throat to detect thyroid diseases using machine learning. I won the Microsoft Imagine Cup National Finals 2022- Health Catogery with this project",
-    "image": 'https://i.ytimg.com/an_webp/QoV-fDWU2Gk/mqdefault_6s.webp?du=3000&sqp=CJ7j1ZYG&rs=AOn4CLDB-DMISP2HvjioiVMqUgY0f2lTeA',
+    "image": 'https://i.ytimg.com/an_webp/QoV-fDWU2Gk/mqdefault_6s.webp?du=3000&sqp=CNvJ2JYG&rs=AOn4CLA8Yyb8mcoO8wcc_WaDAEjv4mZe6Q',
     "link":'https://www.youtube.com/watch?v=QoV-fDWU2Gk',
-    codeLink:'https://www.youtube.com'
+    "codeLink":'https://imaginecup.microsoft.com/en-US/Member/WinnerCertificate?userid=BM11EgvYRoemyUniJ25Hbg%253d%253d&compId=vtIN4K8zypwE6GRn3osorg%253d%253d&teamId=BUA4IeIEL%252blpfzZWXwLjRA%253d%253d'
   },
   {
     "title": "Cube Surfers Endless",
     "description": "I remade a famous mobile game and added my own twist, an endless mode to it",
     "image": "https://play-lh.googleusercontent.com/KkhT634qxisCzEXsokuqSOeNFW-oZhIlWtO7VWijJayjHstjxUQFWLIgEYLPLvraLEyA=w416-h235-rw",
-    "link": 'https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy'
+    "link": 'https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy',
+    "codeLink":'https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy'
+
   }
 ]
 
@@ -51,7 +73,7 @@ function App() {
    <div>
     <Navbar/>
     <Routes>
-      <Route path='/' element =
+      <Route path='/Portfolio-React' element =
       {
         <>
           <Homepage/>
@@ -63,6 +85,12 @@ function App() {
       {
         <>
           <Projects projectLists={projectLists}/>
+        </>
+      } />
+      <Route path='/contacts' element =
+      {
+        <>
+          <Contacts contactList={contactList}/>
         </>
       } />
       </Routes>

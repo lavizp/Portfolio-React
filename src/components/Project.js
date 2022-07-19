@@ -1,9 +1,11 @@
 import React from 'react'
 import '../styles/projects.css'
+import { Link } from "react-router-dom";
+
 
 export default function Project({title, description, image,link, codeLink}) {
     const GOTOSite = ()=>{
-        console.log({title});
+        <Link to ={{pathname: "https://stackoverflow.com/questions/42914666/react-router-external-link"}} target="_blank"/>
     }
   return (
 
@@ -17,7 +19,7 @@ export default function Project({title, description, image,link, codeLink}) {
         <div className='project-info'>
             <h1>{title}</h1>
             <p>{description}</p>
-            <button className='codeLink' onClick={GOTOSite}>Details</button>
+            <a href={codeLink} target='blank' className='codeLink'><h1>Click to See Details</h1></a>
         </div>
         
     </div>

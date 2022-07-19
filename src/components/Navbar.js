@@ -10,7 +10,7 @@ export default function Navbar() {
                 <li><a href ="/#about-container">About</a></li>
                 <li><a href='/#skills-container'>Skills</a></li>
                 <li><Link to = {'/projects'}>Projects</Link></li>
-                <li><Link to = {'./#skills-container'}>Contact</Link></li>
+                <li><Link to = {'./contacts'}>Contact</Link></li>
 
             </ul>
        </div>
