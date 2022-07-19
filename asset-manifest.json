@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio-React/static/css/main.d67f3b43.css",
-    "main.js": "/Portfolio-React/static/js/main.f21e7427.js",
+    "main.js": "/Portfolio-React/static/js/main.88d7dc32.js",
     "static/js/787.aeca62f9.chunk.js": "/Portfolio-React/static/js/787.aeca62f9.chunk.js",
     "static/media/Laviz.png": "/Portfolio-React/static/media/Laviz.a796d61af08f875f121b.png",
     "static/media/Laviz2.jpg": "/Portfolio-React/static/media/Laviz2.5ff1ef900ae26434a171.jpg",
     "index.html": "/Portfolio-React/index.html",
     "main.d67f3b43.css.map": "/Portfolio-React/static/css/main.d67f3b43.css.map",
-    "main.f21e7427.js.map": "/Portfolio-React/static/js/main.f21e7427.js.map",
+    "main.88d7dc32.js.map": "/Portfolio-React/static/js/main.88d7dc32.js.map",
     "787.aeca62f9.chunk.js.map": "/Portfolio-React/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d67f3b43.css",
-    "static/js/main.f21e7427.js"
+    "static/js/main.88d7dc32.js"
   ]
 }
