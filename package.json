@@ -1,8 +1,8 @@
 {
   "name": "portfolio-react",
-  "homepage": "https://lavizp.github.io/Portfolio-React",
+  "homepage": ".",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

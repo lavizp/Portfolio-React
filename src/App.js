@@ -1,6 +1,6 @@
 import './styles/App.css';
 import Homepage from './components/Homepage';
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import About from './components/About';
 import Footer from './components/Footer';
@@ -62,8 +62,9 @@ let projectLists = [
     "link": 'https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy',
     "codeLink":'https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy'
 
-  }
-]
+  },
+
+  ]
 
 function App() {
 
@@ -73,7 +74,7 @@ function App() {
    <div>
     <Navbar/>
     <Routes>
-      <Route path='/Portfolio-React' element =
+      <Route path='/' element =
       {
         <>
           <Homepage/>
@@ -94,6 +95,7 @@ function App() {
         </>
       } />
       </Routes>
+
       
    <Footer/>
 
