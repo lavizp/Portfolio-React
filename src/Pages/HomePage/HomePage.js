@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './homepage.css'
+import Laviz from '../../assets/Laviz.png'
+import {FaGithub,FaLinkedin,FaTwitterSquare} from "react-icons/fa";
 export default function HomePage() {
   return (
     <div>
@@ -19,11 +21,20 @@ export default function HomePage() {
 
           </div>
           <div className='intro-connect'>
-            asd
+            <h1>Connect With Me</h1>
+            <div className='connect-icons'>
+              <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white"/></a>
+              <a href="https://github.com/lavizp" target="blank"><FaLinkedin size={100} color="white"/></a>
+              <a href="https://github.com/lavizp" target="blank"><FaTwitterSquare size={100} color="white"/></a>
+              <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white"/></a>
+
+
+            </div>
+
           </div>
         </div>
         <div className='home-intro-right'></div>
-
+          <img src={Laviz}/>
       </div>
     </div>
   )
