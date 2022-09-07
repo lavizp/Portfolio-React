@@ -30,6 +30,9 @@
     padding: 14px 16px;
     text-decoration: none;
   }
+  .nav-list-container li a:hover {
+    text-decoration: underline;
+  }
   .nav-list-container li:last-child {
     float: right;
   }
@@ -44,5 +47,8 @@
   }
   .nav-resume button {
     padding: 12px 14px;
+    border-style: solid;
+    border-radius: 5px;
+    color: black;
 
   }
