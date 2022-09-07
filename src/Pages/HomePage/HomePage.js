@@ -33,8 +33,12 @@ export default function HomePage() {
 
           </div>
         </div>
-        <div className='home-intro-right'></div>
+        <div className='home-intro-right'>
           <img src={Laviz}/>
+        </div>
+      </div>
+      <div className='home-projects-container'>
+        <h1>Projects</h1>
       </div>
     </div>
   )
