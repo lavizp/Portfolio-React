@@ -44,6 +44,8 @@ export default function HomePage() {
         <h1>Projects</h1>
         <div className='projects-list'>
           <Projects/>
+          <Projects/>
+
         </div>
       </div>
       <Footer/>
