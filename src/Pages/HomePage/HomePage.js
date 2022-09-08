@@ -26,9 +26,8 @@ export default function HomePage() {
             <h1>Connect With Me</h1>
             <div className='connect-icons'>
               <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white"/></a>
-              <a href="https://github.com/lavizp" target="blank"><FaLinkedin size={100} color="white"/></a>
-              <a href="https://github.com/lavizp" target="blank"><FaTwitterSquare size={100} color="white"/></a>
-              <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white"/></a>
+              <a href="https://www.linkedin.com/in/laviz-pandey-4b8b55208/" target="blank"><FaLinkedin size={100} color="white"/></a>
+              <a href="https://twitter.com/lavizpandey" target="blank"><FaTwitterSquare size={100} color="white"/></a>
 
 
             </div>
@@ -36,7 +35,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className='home-intro-right'>
-          <img src={Laviz}/>
+          <img src={Laviz} alt='laviz dai'/>
         </div>
       </div>
       <div className='home-projects-container'>
