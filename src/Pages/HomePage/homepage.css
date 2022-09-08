@@ -38,7 +38,7 @@
 }
 .intro-connect{
 
-    background-color: #2C2C2C;
+    background-color: #262626;
     height: 30%;
     text-align: center;
     color: white;
@@ -98,4 +98,10 @@
 }
 .home-projects-container h1{
     font-size: 50px;
+    margin-bottom: 50px;
+}
+.projects-list{
+    width: 80%;
+    height: auto;
+    margin: auto;
 }
