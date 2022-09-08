@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaGithub,FaLinkedin,FaTwitterSquare} from 'react-icons/fa';
+import {FaGithub,FaLinkedin,FaTwitterSquare,FaEnvelope} from 'react-icons/fa';
 
 import Navbar from '../../components/Navbar/Navbar'
 import Projects from '../../components/ProjectsHome/Projects';
@@ -30,6 +30,7 @@ export default function HomePage() {
               <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white" id="growOnHover"/></a>
               <a href="https://www.linkedin.com/in/laviz-pandey-4b8b55208/" target="blank"><FaLinkedin size={100} color="white"id="growOnHover"/></a>
               <a href="https://twitter.com/lavizpandey" target="blank"><FaTwitterSquare size={100} color="white"id="growOnHover"/></a>
+              <a href="mailto: pandeylaviz@gmail.com" target="blank"><FaEnvelope size={100} color="white"id="growOnHover"/></a>
 
 
             </div>

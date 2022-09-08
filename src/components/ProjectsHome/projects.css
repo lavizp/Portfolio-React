@@ -11,6 +11,7 @@
 }
 .home-project-container:hover  a{
     transform: scale(1.4);
+    font-weight:300;
 
 }
 #moveOnHover{
