@@ -18,8 +18,8 @@ export default function HomePage() {
             <h1>Laviz Pandey</h1>
             <h3>Professional Software Developer  with<br/>over <mark className='gradient'>2 years</mark> of development experience.</h3>
             <div className='intro-buttons'>
-              <button className='orange'>Projects</button>
-              <button className='grey'>Contact</button>
+              <button className='orange' id="growOnHover">Projects</button>
+              <button className='grey' id="growOnHover">Contact</button>
 
             </div>
 
@@ -27,9 +27,9 @@ export default function HomePage() {
           <div className='intro-connect'>
             <h1>Connect With Me</h1>
             <div className='connect-icons'>
-              <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white"/></a>
-              <a href="https://www.linkedin.com/in/laviz-pandey-4b8b55208/" target="blank"><FaLinkedin size={100} color="white"/></a>
-              <a href="https://twitter.com/lavizpandey" target="blank"><FaTwitterSquare size={100} color="white"/></a>
+              <a href="https://github.com/lavizp" target="blank"><FaGithub size={100} color="white" id="growOnHover"/></a>
+              <a href="https://www.linkedin.com/in/laviz-pandey-4b8b55208/" target="blank"><FaLinkedin size={100} color="white"id="growOnHover"/></a>
+              <a href="https://twitter.com/lavizpandey" target="blank"><FaTwitterSquare size={100} color="white"id="growOnHover"/></a>
 
 
             </div>
