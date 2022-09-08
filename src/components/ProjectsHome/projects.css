@@ -1,0 +1,50 @@
+.home-project-container{
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    transition: 2s ease-out 400ms;
+
+}
+.home-project-container:hover  a{
+    transform: scale(1.4);
+
+}
+#moveOnHover{
+    transition: 0.4s ease-out 100ms;
+
+}
+.home-project-container:hover  #moveOnHover{
+    margin-left: 20px;
+
+}
+
+.home-project-container a{
+    margin-right: 50px;
+    height: 30%;
+    width: 200px;
+    margin-top: 60px;
+    margin-bottom: auto;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+
+}
+.projects-intro{
+    margin-left: 50px;
+    margin-top: auto;
+    text-align: left;
+}
+.projects-intro h1{
+    margin-bottom: 0px;
+}
+.projects-intro h2{
+    margin-top: -50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+}
