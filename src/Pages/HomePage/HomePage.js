@@ -3,6 +3,8 @@ import {FaGithub,FaLinkedin,FaTwitterSquare} from 'react-icons/fa';
 
 import Navbar from '../../components/Navbar/Navbar'
 import Projects from '../../components/ProjectsHome/Projects';
+import Footer from '../../components/Footer/Footer';
+
 import './homepage.css'
 import Laviz from '../../assets/Laviz.png'
 export default function HomePage() {
@@ -44,6 +46,7 @@ export default function HomePage() {
           <Projects/>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
