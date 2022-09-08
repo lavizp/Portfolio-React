@@ -1,15 +1,16 @@
 import React from 'react'
+import {FaGithub,FaLinkedin,FaTwitterSquare} from 'react-icons/fa';
+
 import Navbar from '../../components/Navbar/Navbar'
 import './homepage.css'
 import Laviz from '../../assets/Laviz.png'
-import {FaGithub,FaLinkedin,FaTwitterSquare} from "react-icons/fa";
 export default function HomePage() {
   return (
     <div>
       <Navbar/>
       <div className='home-intro-container'>
         <div className='home-intro-left'>
-          <div className='intro-text'>
+          <div className="intro-text">
             <h1>Hi! I am</h1>
             <h1>Laviz Pandey</h1>
             <h3>Professional Software Developer  with<br/>over <mark className='gradient'>2 years</mark> of development experience.</h3>
