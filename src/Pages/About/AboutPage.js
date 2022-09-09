@@ -32,7 +32,7 @@ export default function AboutPage() {
         </div>
         <div className='about-skills-container'>
             <h1>My Experties:</h1>
-            <div className='about-logos-container'>
+            <div className='about-logos-container'>     
                 <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target="blank"><FaHtml5  size={150} className='logo' /><h1 id="logoText">HTML 5</h1></a>
                 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target="blank"><FaCss3Alt  size={150} className='logo' /><h1 id="logoText">CSS 3</h1></a>
                 <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target="blank"><FaJsSquare  size={150} className='logo' /><h1 id="logoText">JavaScript</h1></a>

@@ -83,6 +83,7 @@
 
 .about-logos-container a{
     color: grey;
+    position: relative;
 }
 .logo{
     margin-right: auto;
@@ -109,7 +110,9 @@ a{
     
 }
 .logo:hover + #logoText{
-
     font-size: 25px;
     margin-top: 20px;
+}
+.outer{
+    position: absolute;
 }
