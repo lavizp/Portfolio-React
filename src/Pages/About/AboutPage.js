@@ -2,6 +2,8 @@ import React from 'react'
 import './aboutpage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import {FaJsSquare} from 'react-icons/fa';
+
 
 export default function AboutPage() {
   return (
@@ -27,8 +29,20 @@ export default function AboutPage() {
                 <p>I love to solve complex technical problems. This is why I picked up programming at a very young age. I started off making video games, and then started learning front end web development. I have expertise in HTML,CSS,React and the Unity Game Engine.I love working in a fast paced environment and am very open to learning new technologies. I love connecting to people and would love to share a conversation with anyone.  </p>
             </div>
         </div>
-        <div>
-            
+        <div className='about-skills-container'>
+            <h1>My Experties:</h1>
+            <div className='about-logos-container'>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo' /></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+
+            </div>
         </div>
         <Footer/>
     </>
