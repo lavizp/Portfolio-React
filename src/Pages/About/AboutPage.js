@@ -2,7 +2,7 @@ import React from 'react'
 import './aboutpage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import {FaJsSquare} from 'react-icons/fa';
+import {FaJsSquare,FaUnity,FaReact} from 'react-icons/fa';
 
 
 export default function AboutPage() {
@@ -32,15 +32,13 @@ export default function AboutPage() {
         <div className='about-skills-container'>
             <h1>My Experties:</h1>
             <div className='about-logos-container'>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo' /></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
-                <a href=''><FaJsSquare color='grey' size={150} className='logo'/></a>
+                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><FaJsSquare  size={150} className='logo' /><h1 id="logoText">JavaScript</h1></a>
+                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><FaReact  size={150} className='logo' /><h1 id="logoText">React</h1></a>
+                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><FaUnity  size={150} className='logo' /><h1 id="logoText">Unity</h1></a>
+                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><FaJsSquare  size={150} className='logo' /><h1 id="logoText">JavaScript</h1></a>
+                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><FaJsSquare  size={150} className='logo' /><h1 id="logoText">JavaScript</h1></a>
+
+
 
             </div>
         </div>

@@ -80,8 +80,31 @@
     gap: 1px;
     grid-template-columns: repeat(3, 1fr);
 }
+
+.about-logos-container a{
+    color: grey;
+}
 .logo{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    transition: 0.2s ease-out 100ms;
+}
+a{
+    text-decoration: none;
+}
+.logo:hover{
+    transform: scale(1.1);
+    color: white;
+}
+#logoText{
+    transition: 0.4s ease-out 100ms;
+    font-size: 0px;
+    color: white;
+    text-decoration: none;
+
+
+}
+.logo:hover + #logoText{
+    font-size: 25px;
 }
