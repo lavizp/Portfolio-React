@@ -88,24 +88,28 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
+    display: block;
     transition: 0.2s ease-out 100ms;
+    opacity: .3;
+
 }
 a{
     text-decoration: none;
 }
 .logo:hover{
     transform: scale(1.1);
-    color: white;
+    opacity: 1;
+
 }
 #logoText{
     transition: 0.4s ease-out 100ms;
     font-size: 0px;
-    color: white;
+    color: grey;
     text-align: center;
-
-
+    
 }
 .logo:hover + #logoText{
+
     font-size: 25px;
     margin-top: 20px;
 }
