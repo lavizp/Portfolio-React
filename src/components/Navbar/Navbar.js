@@ -9,10 +9,10 @@ export default function Navbar() {
         </div>
         <div className='nav-list-container'>
             <ul>
-                <li><a><Link to="/">Home</Link></a></li>
-                <li><a><Link to="/about">About</Link></a></li>
-                <li><a><Link to="/">Works</Link></a></li>
-                <li><a><Link to="/">Experience</Link></a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/">Works</Link></li>
+                <li><Link to="/">Experience</Link></li>
 
             </ul>
         </div>

@@ -9,8 +9,7 @@ export default function Projects() {
             <h2 id="moveOnHover">E-Commerse App</h2>
 
         </div>
-
-        <a href=''>View Project</a>
+        <a href='/projects/id'>View Project</a>
     </div>
   )
 }
