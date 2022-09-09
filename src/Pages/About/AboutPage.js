@@ -27,6 +27,9 @@ export default function AboutPage() {
                 <p>I love to solve complex technical problems. This is why I picked up programming at a very young age. I started off making video games, and then started learning front end web development. I have expertise in HTML,CSS,React and the Unity Game Engine.I love working in a fast paced environment and am very open to learning new technologies. I love connecting to people and would love to share a conversation with anyone.  </p>
             </div>
         </div>
+        <div>
+            
+        </div>
         <Footer/>
     </>
   )
