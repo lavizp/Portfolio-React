@@ -34,7 +34,14 @@ export default function AboutPage() {
         <div className='about-skills-container'>
             <h1>My Experties:</h1>
             <div className='about-logos-container'>
-                <SingleLogo logoicon={<FaCss3Alt/>} name='HTML' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<FaHtml5/>} name='HTML' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>
+                <SingleLogo logoicon={<FaCss3Alt/>} name='CSS' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<FaJsSquare/>} name='JavaScript' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<FaReact/>} name='React' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<FaUnity/>} name='Unity' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<TbCSharp/>} name='C Sharp' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<FaFigma/>} name='Figma' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+
   
 
 
