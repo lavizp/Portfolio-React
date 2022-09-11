@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       <h1 className='main-title-projects'>Projects</h1>
       <div className='dark-background'>
         <div className='projects-list'>
-        {projectsData.map((proj) => <Projects title={proj.title} description={proj.shortdescription} image = {proj.image}/>)}
+        {projectsData.map((proj) => <Projects title={proj.title} description={proj.shortdescription} image = {proj.image} id={proj.id} key={proj.id}/>)}
         </div>
       </div>
       </div>
