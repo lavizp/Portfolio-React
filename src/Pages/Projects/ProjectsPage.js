@@ -3,6 +3,8 @@ import Projects from '../../components/ProjectsHome/Projects'
 import './projectpage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import { projectsData } from '../../Data/ProjetcsData';
+
 
 export default function ProjectsPage() {
   return (
@@ -11,8 +13,7 @@ export default function ProjectsPage() {
       <h1 className='main-title-projects'>Projects</h1>
       <div className='dark-background'>
         <div className='projects-list'>
-          <Projects/>
-          <Projects/>
+        {projectsData.map((proj) => <Projects title={proj.title} description={proj.shortdescription} image = {proj.image}/>)}
         </div>
       </div>
       <Footer/>
