@@ -10,12 +10,15 @@ export default function ProjectsPage() {
   return (
     <div>
       <Navbar/>
+      <div className='projects-projects-container'>
       <h1 className='main-title-projects'>Projects</h1>
       <div className='dark-background'>
         <div className='projects-list'>
         {projectsData.map((proj) => <Projects title={proj.title} description={proj.shortdescription} image = {proj.image}/>)}
         </div>
       </div>
+      </div>
+
       <Footer/>
 
     </div>

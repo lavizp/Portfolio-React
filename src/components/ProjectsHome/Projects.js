@@ -15,7 +15,7 @@ export default function Projects({title, description, image, id}) {
           <div className='image-hover-projects'>
             <img src={image}  alt='ProjectImage'/>
           </div>
-          <a href='/projects/id' className='view-projects'>View Project</a>
+          <a href={/project/+ id} className='view-projects'>View Project</a>
 
         </div>
 
