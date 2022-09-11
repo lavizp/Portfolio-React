@@ -1,0 +1,17 @@
+.main-title-projects{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+.projects-list{
+    padding-top: 50px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.dark-background{
+    background-color: #262626;
+}
