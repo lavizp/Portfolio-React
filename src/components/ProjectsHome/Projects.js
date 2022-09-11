@@ -1,5 +1,6 @@
 import React from 'react'
 import './projects.css'
+import Laviz from '../../assets/Laviz.png'
 
 export default function Projects() {
   return (
@@ -8,8 +9,12 @@ export default function Projects() {
             <h1 id="moveOnHover">Title ho</h1>
             <h2 id="moveOnHover">E-Commerse App</h2>
 
+
         </div>
-        <a href='/projects/id'>View Project</a>
+            <img src={Laviz} className='image-hover-projects'/>
+          <a href='/projects/id'>View Project</a>
+
     </div>
   )
 }
+

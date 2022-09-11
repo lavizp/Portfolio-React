@@ -22,17 +22,26 @@
     margin-left: 20px;
 
 }
+.home-project-container:hover  .image-hover-projects{
+    opacity: 1;
+
+}
 
 .home-project-container a{
     margin-right: 50px;
     height: 30%;
-    width: 200px;
-    margin-top: 60px;
+    width: 150px;
+    margin-top: auto;
     margin-bottom: auto;
     color: black;
     font-size: 20px;
     text-decoration: none;
     transition: all .4s ease-in-out;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: auto;
+
 
 }
 .projects-intro{
@@ -41,11 +50,18 @@
     text-align: left;
 }
 .projects-intro h1{
-    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .projects-intro h2{
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 20px;
     font-weight: lighter;
+}
+.image-hover-projects{
+    width: 50%;
+    top:0;
+    opacity: 0;
+    transition: 0.4s ease-out 100ms;
+
 }
