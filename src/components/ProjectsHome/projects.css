@@ -10,8 +10,9 @@
 
 }
 .home-project-container:hover  a{
-    transform: scale(1.4);
+    font-size: 22px;
     font-weight:300;
+    background-color: grey;
 
 }
 #moveOnHover{
@@ -49,8 +50,9 @@
     margin-top: auto;
     text-align: left;
 }
-.projects-intro h1{
+.project-title{
     margin-top: 0px;
+    font-size: 30px;
 }
 .projects-intro h2{
     margin-top: 0px;

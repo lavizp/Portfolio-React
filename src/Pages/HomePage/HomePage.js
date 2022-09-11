@@ -5,6 +5,8 @@ import Navbar from '../../components/Navbar/Navbar'
 import Projects from '../../components/ProjectsHome/Projects';
 import Footer from '../../components/Footer/Footer';
 
+import { projectsData } from '../../Data/ProjetcsData';
+
 import './homepage.css'
 import Laviz from '../../assets/Laviz.png'
 export default function HomePage() {
@@ -44,8 +46,7 @@ export default function HomePage() {
       <div className='home-projects-container'>
         <h1>Projects</h1>
         <div className='projects-list'>
-          <Projects/>
-          <Projects/>
+          {projectsData.map((proj) => <Projects title={proj.title} description={proj.shortdescription} image = {proj.image}/>)}
 
         </div>
       </div>
