@@ -1,6 +1,5 @@
 import Resturant from '../assets/Resturant.png'
 import CubeSurfers from '../assets/CubeSurfers.png'
-import BooksGasm from '../assets/Booksgasm.png'
 
 
 
@@ -11,7 +10,7 @@ export const projectsData =
         "title": "BooksGasm Nepal",
         "shortdescription": "E-Commerse Website",
         "description": "lorkjasdkjas dkasbdjkasbd asdb iajksbda sd iab da sdiasbdjkas dkjas ",
-        "image":BooksGasm
+        "image":Resturant
     },
     {
         "id":1,
