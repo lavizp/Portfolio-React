@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams,useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './singleproject.css'
 import {projectsData} from '../../Data/ProjetcsData'
 import Navbar from '../../components/Navbar/Navbar'
@@ -15,7 +15,6 @@ export default function SingleProjectPage() {
       const tempData = projectsData.filter((data)=> data.id == id)
       setProject(tempData[0]);
     },[])
-    const navigate = useNavigate();
   return (
     
     <div>
