@@ -9,26 +9,6 @@ import { IconContext } from 'react-icons';
 
 export default function AboutPage() {
     const [quote,setQuote] = useState("");
-    const [fontSize,setFontSize] = useState(50);
-    useEffect(()=>{
-        const getQuote = async() =>{
-            await fetch('http://api.quotable.io/random')
-            .then(response => response.json())
-            .then(response => setQuote(response.content))
-            .catch(err => console.error(err));
-        }
-        getQuote();
-        console.log(quote.length);
-
-    },[])
-    useEffect(()=>{
-        console.log(quote);
-        console.log(quote.length);
-        if(quote.length > 120){
-            setFontSize(35);
-
-        }
-    },[quote])
 
   return (
     <>
@@ -47,7 +27,7 @@ export default function AboutPage() {
         <div className='about-quote'>
             <div className='quote-container'>
                 <p>Random Quote:</p>
-                <h2 style={{fontSize: fontSize}}>"{quote}"</h2>
+                <h2 style={{fontSize: 30}}>"Quote ho Dajju"</h2>
             </div>
             <div className='additional-description'>
                 <h1>About Me</h1>
