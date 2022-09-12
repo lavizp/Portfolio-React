@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './aboutpage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -8,9 +8,32 @@ import { IconContext } from 'react-icons';
 
 
 export default function AboutPage() {
+    const [quote,setQuote] = useState("");
+    const [fontSize,setFontSize] = useState(50);
+    useEffect(()=>{
+        const getQuote = async() =>{
+            await fetch('http://api.quotable.io/random')
+            .then(response => response.json())
+            .then(response => setQuote(response.content))
+            .catch(err => console.error(err));
+        }
+        getQuote();
+        console.log(quote.length);
+
+    },[])
+    useEffect(()=>{
+        console.log(quote);
+        console.log(quote.length);
+        if(quote.length > 120){
+            setFontSize(35);
+
+        }
+    },[quote])
+
   return (
     <>
         <Navbar/>
+
         <div className='about-intro'>
             <div className='about-intro-description'>
                 <h1>
@@ -24,7 +47,7 @@ export default function AboutPage() {
         <div className='about-quote'>
             <div className='quote-container'>
                 <p>Random Quote:</p>
-                <h2>“Creativity is Intilligience having fun”</h2>
+                <h2 style={{fontSize: fontSize}}>"{quote}"</h2>
             </div>
             <div className='additional-description'>
                 <h1>About Me</h1>

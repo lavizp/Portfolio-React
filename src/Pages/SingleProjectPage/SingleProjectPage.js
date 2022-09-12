@@ -63,8 +63,9 @@ function CodeButton({project})
   if(project===""){
     return;
   }
+  console.log(project)
   return(
-    <button id = 'growOnHover' className='tech-button blackbutton' onClick={()=>window.open(project?.github,'_blank')}>Code</button>
+    <button id = 'growOnHover' className='tech-button blackbutton' onClick={()=>window.open(project,'_blank')}>Code</button>
   )
 }
 function LaunchButton({project})
@@ -73,7 +74,7 @@ function LaunchButton({project})
     return;
   }
   return(
-    <button id = 'growOnHover'className='tech-button orange' onClick={()=>window.open(project?.link,'_blank')}>Launch</button>
+    <button id = 'growOnHover'className='tech-button orange' onClick={()=>window.open(project,'_blank')}>Launch</button>
 
   )
 }
