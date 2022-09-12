@@ -1,28 +1,20 @@
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/About/AboutPage";
-import { Route,Switch} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import ProjectsPage from "./Pages/Projects/ProjectsPage";
 import SingleProjectPage from "./Pages/SingleProjectPage/SingleProjectPage";
 
 function App() {
   return (
-    <Switch>
-      <Route exact path="/" >
-        <HomePage/>
-      </Route>
-      <Route exact path="/about" >
-        <AboutPage/>
-      </Route>
-      <Route exact path="/projects" >
-        <ProjectsPage/>
-      </Route>
-      <Route exact path="/projects/:id" >
-        <SingleProjectPage/>
-      </Route>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/about" element={<AboutPage/>}/>
+      <Route path="/projects" element={<ProjectsPage/>}/>
+      <Route path="projects/:id" element={<SingleProjectPage/>}/>
 
 
 
-    </Switch>
+    </Routes>
   );
 }
 

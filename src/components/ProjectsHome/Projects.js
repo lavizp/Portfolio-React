@@ -16,8 +16,8 @@ export default function Projects({title, description, image, id}) {
           <div className='image-hover-projects'>
             <img src={image}  alt='ProjectImage'/>
           </div>
-          <Link to='/projects/{id}' className='view-projects'>View Project</Link>
-          {/* <a href={/projects/+ id} className='view-projects'>View Project</a> */}
+          <Link to={"/projects/"+id} className='view-projects'>View Project</Link>
+
 
         </div>
 
@@ -25,4 +25,5 @@ export default function Projects({title, description, image, id}) {
     </div>
   )
 }
+
 
