@@ -79,3 +79,24 @@
     width: 50%;
     height: 150px;
 }
+@media only screen and (max-width: 768px) {
+    .projects-intro{
+        margin-left: 20px;
+        margin-top: auto;
+        text-align: left;
+    }
+    .view-projects{
+        right: 0;
+        padding-top: 12px;
+        width: 100px;
+        background-color: gainsboro;
+        text-align: center;
+    
+    }
+    .image-hover-projects{
+        display: none;
+        width: 0%;
+        position: relative;
+    
+    }
+}
