@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,useNavigate } from 'react-router-dom'
 import './singleproject.css'
 import {projectsData} from '../../Data/ProjetcsData'
 import Navbar from '../../components/Navbar/Navbar'
@@ -9,12 +9,15 @@ export default function SingleProjectPage() {
     const {id} = useParams();
     const[project,setProject] = useState();
 
+
+
     useEffect(()=>{
       const tempData = projectsData.filter((data)=> data.id == id)
       setProject(tempData[0]);
     },[])
-    
+    const navigate = useNavigate();
   return (
+    
     <div>
       <Navbar/>
       <h1 className='main-title-projects'>{project?.title}</h1>
@@ -24,17 +27,18 @@ export default function SingleProjectPage() {
             <div className='technical-details'>
               <h1>Technical Details</h1>
               <p>
-              Tech Used: React, SCSS,Firebase<br/>
+              Tech Used: {project?.techused}<br/>
               </p>
               <p>
-              Platform: Web<br/>
+              Platform: {project?.platform}<br/>
               </p>
               <p>
-              Catogery: E-Commerce Application
+              Catogery: {project?.catogery}
               </p>
               <div className='tech-details-buttons'>
-                <button id = 'growOnHover' className='tech-button blackbutton'>Code</button>
-                <button id = 'growOnHover'className='tech-button orange'>Launch</button>
+                <CodeButton project={project?.github}/>
+                <LaunchButton project={project?.link}/>
+                
 
               </div>
               </div>
@@ -50,5 +54,26 @@ export default function SingleProjectPage() {
       <Footer/>
 
     </div>
+  )
+
+}
+
+function CodeButton({project})
+{
+  if(project===""){
+    return;
+  }
+  return(
+    <button id = 'growOnHover' className='tech-button blackbutton' onClick={()=>window.open(project?.github,'_blank')}>Code</button>
+  )
+}
+function LaunchButton({project})
+{
+  if(project===""){
+    return;
+  }
+  return(
+    <button id = 'growOnHover'className='tech-button orange' onClick={()=>window.open(project?.link,'_blank')}>Launch</button>
+
   )
 }

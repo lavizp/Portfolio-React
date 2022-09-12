@@ -12,7 +12,10 @@ export const projectsData =
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  ",
         "image":Booksgasm,
         "github":"https://github.com/lavizp/BooksgasmNepalWebsite",
-        "link":""
+        "link":"",
+        "techused": "React, SCSS,Firebase",
+        "platform": "Web",
+        "catogery":"E-Commerce Application"
     },
     {
         "id":1,
@@ -21,7 +24,10 @@ export const projectsData =
         "description": "lorkjasdkjas dkasbdjkasbd asdb iajksbda sd iab da sdiasbdjkas dkjas ",
         "image":CubeSurfers,
         "github":"",
-        "link":"https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy&hl=en&gl=US"
+        "link":"https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy&hl=en&gl=US",
+        "techused": "React, SCSS,Firebase",
+        "platform": "Web",
+        "catogery":"E-Commerce Application"
     },
     {
         "id":2,
@@ -30,6 +36,9 @@ export const projectsData =
         "description": "lorkjasdkjas dkasbdjkasbd asdb iajksbda sd iab da sdiasbdjkas dkjas ",
         "image":Resturant,
         "github":"",
-        "link":""
+        "link":"",
+        "techused": "React, SCSS,Firebase",
+        "platform": "Web",
+        "catogery":"E-Commerce Application"
     }
 ]
