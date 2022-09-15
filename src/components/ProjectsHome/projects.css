@@ -87,16 +87,24 @@
     }
     .view-projects{
         right: 0;
-        padding-top: 12px;
         width: 100px;
-        background-color: gainsboro;
+        background-color: #fe471d;
+        padding-top: 0px;
+
+    }
+    .view-projects h1{
+        color: white;
         text-align: center;
-    
+        font-weight: bold;
+        font-size: 20px;
     }
     .image-hover-projects{
         display: none;
         width: 0%;
         position: relative;
     
+    }
+    .project-title{
+        margin-top: 15px;
     }
 }

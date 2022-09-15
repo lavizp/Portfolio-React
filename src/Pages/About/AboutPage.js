@@ -60,7 +60,7 @@ function SingleLogo({logoicon, name,link}){
         <IconContext.Provider value={{ size: 200, className:'logo' }}>
             <div className='outer'>
             <a href={link} target="blank">{logoicon}</a>
-            <h1 id="logoText">{name}</h1>
+            <a id="logoText" href={link} target="blank">{name}</a>
             </div>  
         </IconContext.Provider>
     )
