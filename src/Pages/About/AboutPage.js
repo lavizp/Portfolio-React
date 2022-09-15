@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './aboutpage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -8,7 +8,6 @@ import { IconContext } from 'react-icons';
 
 
 export default function AboutPage() {
-    const [quote,setQuote] = useState("");
 
   return (
     <>
