@@ -13,18 +13,16 @@
     padding-left: 80px;
     display: flex;
     overflow: hidden;
+    justify-content: space-between;
 
 }
 
-.nav-list-container{
-    margin-left: 30%;
-}
 .nav-list-container ul{
-    margin-top: 15px;
     list-style-type: none;
 }
 .nav-list-container li {
     float: left;
+    margin-top: 20px;
     margin-left: 0px;
   }
 .nav-list-container li a {
@@ -37,22 +35,57 @@
   .nav-list-container li a:hover {
     text-decoration: underline;
   }
-  .nav-list-container li:last-child {
-    float: right;
-  }
   .nav-resume {
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 30px;
-    display: block;
-
-
-  }
-  .nav-resume button {
+    margin-top: -20px;
     padding: 12px 14px;
     border-style: solid;
     border-radius: 5px;
     color: black;
 
   }
+  .nav-toggle-button{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: 35px;
+    right: 1rem;
+    height: 30px;
+    width: 50px;
+    justify-content: space-between;
+  }
+  .nav-toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: black;
+  }
+
+  .open-flex{
+    display: flex;
+  }
+  .not-visible{
+    display: none;
+  }
+@media only screen and (max-width: 768px) {
+
+  .nav-container{
+      height: auto;
+      flex-direction: column;
+
+}
+
+.nav-list-container{
+  flex-direction: column;
+  height: auto;
+}
+.nav-list-container li{
+  text-align: center;
+  width: 100%;
+}
+
+.nav-toggle-button{
+  border: 0px;
+  display: flex;
+}
+
+}
