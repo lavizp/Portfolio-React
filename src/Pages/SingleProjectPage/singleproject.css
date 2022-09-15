@@ -71,3 +71,30 @@
     background: white;
     color: #262626;
 }
+
+@media only screen and (max-width: 768px) {
+    .full-page-image{
+        display: block;
+        margin: auto;
+        width:100%;
+        height: 100%;
+    }
+    .singleproj-data-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-left:0px;
+        padding-right: 20px;
+        color: white;
+        flex-wrap: wrap;
+    }
+    .technical-details{
+        width: 100%;
+    }
+    .development-story{
+        width: 100%;
+    }
+    
+
+}
