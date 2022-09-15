@@ -1,0 +1,32 @@
+.experiences-bg-container{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-left: 15%;
+}
+.experience-container{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 50px;
+}
+.experience-container h5{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.experience-details {
+    text-align: start;
+    margin-left: 50px;
+}
+.experience-details h1{
+    font-size: 40px;
+}
+.experience-details h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.experience-details ul{
+    font-size: 20px;
+    margin-left: 10px;
+    list-style-type: circle;
+}
