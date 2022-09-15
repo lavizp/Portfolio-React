@@ -76,15 +76,18 @@
     text-decoration: none;
   }
 @media only screen and (max-width: 768px) {
-  .not-visible{
-    display: none;
-  }
-  .nav-container{
-      height: auto;
-      flex-direction: column;
+.not-visible{
+  display: none;
+}
+.nav-container{
+  height: auto;
+  flex-direction: column;
+  padding-left: 0px;
 
 }
-
+.nav-logo{
+  padding-left: 50px;
+}
 .nav-list-container{
   flex-direction: column;
   height: auto;

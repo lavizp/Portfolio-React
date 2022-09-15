@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./navbar.css"
 import { Link } from 'react-router-dom'
 export default function Navbar() {
@@ -6,6 +6,9 @@ export default function Navbar() {
         setNavOpen(!navOpen);
     }
     const[navOpen, setNavOpen] = useState("false");
+    useEffect(() =>{
+        setNavOpen(false);
+    },[])
   return (
     <div className='nav-container'>
         <div className='nav-logo'>
