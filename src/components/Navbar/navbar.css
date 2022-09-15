@@ -60,14 +60,25 @@
     background-color: black;
   }
 
-  .open-flex{
-    display: flex;
+  .not-visible ul{
+    list-style-type: none;
+}
+.not-visible li {
+    float: left;
+    margin-top: 20px;
+    margin-left: 0px;
   }
+.not-visible li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+@media only screen and (max-width: 768px) {
   .not-visible{
     display: none;
   }
-@media only screen and (max-width: 768px) {
-
   .nav-container{
       height: auto;
       flex-direction: column;
