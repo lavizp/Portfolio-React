@@ -49,6 +49,8 @@ export default function HomePage() {
           {projectsData.map((proj) => <Projects title={proj.title} description={proj.shortdescription} image = {proj.image} id={proj.id} key={proj.id}/>)}
 
         </div>
+        <a href='/projects' className='view-more'><h3>View More</h3></a>
+
       </div>
       <Footer/>
     </div>

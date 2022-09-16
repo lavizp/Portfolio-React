@@ -4,12 +4,18 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import './experience.css'
 import { experienceData } from '../../Data/ExperiencesData'
+import {FaAngleDoubleDown} from 'react-icons/fa'
 
 export default function ExperiencePage() {
   return (
     <div>
         <Navbar/>
-        <h1 className='main-title-projects'>Experiences</h1>
+        <div className='title-container'>
+          <h1 className='main-title-projects'>Experiences</h1>
+          <FaAngleDoubleDown color="black" className='arrow' size={100}/>
+
+        </div>
+
         <div className='experiences-bg-container'>
             {experienceData.map((exp) => 
               <ExperienceBox key={exp.id} company={exp.company} position={exp.position} date={exp.date} roles={exp.roles}/>
