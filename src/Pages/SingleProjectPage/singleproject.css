@@ -3,7 +3,9 @@
     margin: auto;
     width: 80%;
 }
-
+.main-title-projects{
+    text-align: center;
+}
 .singleproj-data-container{
     width: 100%;
     height: 700px;

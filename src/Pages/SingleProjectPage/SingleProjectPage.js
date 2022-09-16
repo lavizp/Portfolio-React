@@ -4,6 +4,8 @@ import './singleproject.css'
 import {projectsData} from '../../Data/ProjetcsData'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import {FaAngleDoubleDown} from 'react-icons/fa'
+
 
 export default function SingleProjectPage() {
     const {id} = useParams();
@@ -20,7 +22,11 @@ export default function SingleProjectPage() {
   return (
     <div>
       <Navbar/>
-      <h1 className='main-title-projects'>{project?.title}</h1>
+      <div className='title-container'>
+          <h1 className='main-title-projects'>{project?.title}</h1>
+          <FaAngleDoubleDown color="black" className='arrow' size={100}/>
+
+        </div>
       <div className='dark-background'>
           <img src={project?.image} alt='WebsiteImage' className='full-page-image'/>
           <div className='singleproj-data-container'>
