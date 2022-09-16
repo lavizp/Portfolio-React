@@ -3,7 +3,7 @@
     width: 80%;
     margin: auto;
     margin-left: 15%;
-    margin-bottom: 150px;;
+    margin-bottom: 150px;
 }
 .other-works-container{
     text-align: center;
@@ -49,9 +49,8 @@
 }
 
 .arrow{
-    top:50%;
-    position: absolute;
     animation: MoveUpDown 2s linear infinite;
+    z-index: -1;
 }
 @keyframes MoveUpDown {
     0%, 100% {
