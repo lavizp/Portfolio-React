@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Projects from '../../components/ProjectsHome/Projects'
 import './projectpage.css'
 import Navbar from '../../components/Navbar/Navbar'
@@ -8,6 +8,9 @@ import {FaAngleDoubleDown} from 'react-icons/fa'
 
 
 export default function ProjectsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+},[]);
   return (
     <div>
       <Navbar/>

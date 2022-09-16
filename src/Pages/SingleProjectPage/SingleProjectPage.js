@@ -14,9 +14,10 @@ export default function SingleProjectPage() {
     useEffect(()=>{
       const tempData = projectsData.filter((data)=> data.id == id)
       setProject(tempData[0]);
+      window.scrollTo(0, 0); 
+
     },[])
   return (
-    
     <div>
       <Navbar/>
       <h1 className='main-title-projects'>{project?.title}</h1>

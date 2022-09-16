@@ -20,14 +20,14 @@ export default function ExperiencePage() {
 
         <div className='experiences-bg-container'>
             {experienceData.map((exp) => 
-              <ExperienceBox key={exp.id} company={exp.company} position={exp.position} date={exp.date} roles={exp.roles}/>
+              <ExperienceBox key={exp.id} company={exp.company} position={exp.position} date={exp.date} roles={exp.roles} />
             )}
 
         </div>
         <div className='other-works-container'>
             <h1 className="other-achievement">Other Achievements</h1>
             {achievementData.map((ach) => 
-            <AchievementBox title={ach.title} date={ach.date} position={ach.position} link={ach.li} roles={ach.roles}/>)}
+            <AchievementBox key = {ach.id} title={ach.title} date={ach.date} position={ach.position} link={ach.li} roles={ach.roles}/>)}
             
         </div>
         <Footer/>
@@ -48,7 +48,7 @@ function ExperienceBox({company,date,position,roles}){
       <ul>
         {roles.map((role)=>{
           return(
-            <li>{role}</li>
+            <li key={role}>{role}</li>
           )
         })}
 
@@ -69,7 +69,7 @@ function AchievementBox({title,date,position,link,roles}){
       <ul>
         {roles.map((role)=>{
           return(
-            <li>{role}</li>
+            <li key={role}>{role}</li>
           )
         })}
 

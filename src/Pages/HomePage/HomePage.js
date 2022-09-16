@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaGithub,FaLinkedin,FaTwitterSquare,FaEnvelope} from 'react-icons/fa';
-
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar'
 import Projects from '../../components/ProjectsHome/Projects';
 import Footer from '../../components/Footer/Footer';
@@ -10,6 +10,7 @@ import { projectsData } from '../../Data/ProjetcsData';
 import './homepage.css'
 import Laviz from '../../assets/Laviz.png'
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar/>
@@ -20,8 +21,8 @@ export default function HomePage() {
             <h1>Laviz Pandey</h1>
             <h3>Professional Software Developer  with<br/>over <mark className='gradient'>2 years</mark> of development experience.</h3>
             <div className='intro-buttons'>
-              <button className='orange' id="growOnHover">Projects</button>
-              <button className='grey' id="growOnHover">About</button>
+              <button className='orange' id="growOnHover" onClick={()=> navigate("/projects")}>Projects</button>
+              <button className='grey' id="growOnHover" onClick={()=> navigate("/about")}>About</button>
 
             </div>
 

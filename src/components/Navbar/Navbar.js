@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./navbar.css"
 import { Link } from 'react-router-dom'
+import LavizPandeyCV from '../../assets/LavizPandeyCV.pdf'
 export default function Navbar() {
     const openNav = () =>{
         setNavOpen(!navOpen);
@@ -21,7 +22,7 @@ export default function Navbar() {
                 <li><Link to="/projects">Works</Link></li>
                 <li><Link to="/experience">Experience</Link></li>
 
-                <li><Link to="/experience"><button className='nav-resume'> Resume </button></Link></li>
+                <li><a href={LavizPandeyCV} target="blank"><button className='nav-resume'> Resume </button></a></li>
 
 
             </ul>

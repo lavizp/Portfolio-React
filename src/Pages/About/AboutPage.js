@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './aboutpage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -8,7 +8,9 @@ import { IconContext } from 'react-icons';
 
 
 export default function AboutPage() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    },[]);
   return (
     <>
         <Navbar/>
@@ -25,8 +27,8 @@ export default function AboutPage() {
         </div>
         <div className='about-quote'>
             <div className='quote-container'>
-                <p>Random Quote:</p>
-                <h2 style={{fontSize: 30}}>"Quote ho Dajju"</h2>
+                <p>Todays Quote:</p>
+                <h2 style={{fontSize: 30}}>"Impossible is for the unwilling."</h2>
             </div>
             <div className='additional-description'>
                 <h1>About Me</h1>
@@ -37,12 +39,12 @@ export default function AboutPage() {
             <h1>My Experties:</h1>
             <div className='about-logos-container'>
                 <SingleLogo logoicon={<FaHtml5/>} name='HTML' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>
-                <SingleLogo logoicon={<FaCss3Alt/>} name='CSS' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
-                <SingleLogo logoicon={<FaJsSquare/>} name='JavaScript' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
-                <SingleLogo logoicon={<FaReact/>} name='React' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
-                <SingleLogo logoicon={<FaUnity/>} name='Unity' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
-                <SingleLogo logoicon={<TbCSharp/>} name='C Sharp' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
-                <SingleLogo logoicon={<FaFigma/>} name='Figma' link='https://developer.mozilla.org/en-US/docs/Web/HTML'/>    
+                <SingleLogo logoicon={<FaCss3Alt/>} name='CSS' link='https://developer.mozilla.org/en-US/docs/Web/CSS'/>    
+                <SingleLogo logoicon={<FaJsSquare/>} name='JavaScript' link='https://nodejs.org/en/docs/'/>    
+                <SingleLogo logoicon={<FaReact/>} name='React' link='https://reactjs.org/docs/getting-started.html'/>    
+                <SingleLogo logoicon={<FaUnity/>} name='Unity' link='https://docs.unity3d.com/Manual/index.html'/>    
+                <SingleLogo logoicon={<TbCSharp/>} name='C Sharp' link='https://docs.microsoft.com/en-us/dotnet/csharp/'/>    
+                <SingleLogo logoicon={<FaFigma/>} name='Figma' link='https://www.figma.com/'/>    
 
   
 
