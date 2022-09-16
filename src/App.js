@@ -5,6 +5,7 @@ import ProjectsPage from "./Pages/Projects/ProjectsPage";
 import SingleProjectPage from "./Pages/SingleProjectPage/SingleProjectPage";
 import ExperiencePage from "./Pages/ExperiencePage/ExperiencePage";
 
+
 function App() {
   return (
     <Routes>
@@ -13,6 +14,8 @@ function App() {
       <Route path="/projects" element={<ProjectsPage/>}/>
       <Route path="projects/:id" element={<SingleProjectPage/>}/>
       <Route path="/experience" element={<ExperiencePage/>}/>
+
+
     </Routes>
   );
 }

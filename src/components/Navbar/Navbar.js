@@ -20,6 +20,7 @@ export default function Navbar() {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/projects">Works</Link></li>
                 <li><Link to="/experience">Experience</Link></li>
+
                 <li><Link to="/experience"><button className='nav-resume'> Resume </button></Link></li>
 
 

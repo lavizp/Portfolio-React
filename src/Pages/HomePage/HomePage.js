@@ -21,7 +21,7 @@ export default function HomePage() {
             <h3>Professional Software Developer  with<br/>over <mark className='gradient'>2 years</mark> of development experience.</h3>
             <div className='intro-buttons'>
               <button className='orange' id="growOnHover">Projects</button>
-              <button className='grey' id="growOnHover">Contact</button>
+              <button className='grey' id="growOnHover">About</button>
 
             </div>
 
