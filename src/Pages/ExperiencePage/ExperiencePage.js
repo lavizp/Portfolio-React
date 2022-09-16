@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import './experience.css'
 import { experienceData } from '../../Data/ExperiencesData'
+import { achievementData } from '../../Data/Achievements'
+
 import {FaAngleDoubleDown} from 'react-icons/fa'
 
 export default function ExperiencePage() {
@@ -21,6 +23,12 @@ export default function ExperiencePage() {
               <ExperienceBox key={exp.id} company={exp.company} position={exp.position} date={exp.date} roles={exp.roles}/>
             )}
 
+        </div>
+        <div className='other-works-container'>
+            <h1 className="other-achievement">Other Achievements</h1>
+            {achievementData.map((ach) => 
+            <AchievementBox title={ach.title} date={ach.date} position={ach.position} link={ach.li} roles={ach.roles}/>)}
+            
         </div>
         <Footer/>
     </div>
@@ -43,10 +51,27 @@ function ExperienceBox({company,date,position,roles}){
             <li>{role}</li>
           )
         })}
-        {/* <li>Developed a mobile based casino style video game from scratch using the Unity Game Engiene</li>
-        <li>Implimented a CRUD application to fetch and push to a Restful API.</li>
-        <li>Learned about writting industry standard code which is redable and scalable.</li>
-        <li>Worked with C# and Unity</li> */}
+
+      </ul>
+  </div>
+  </div>
+  )
+}
+function AchievementBox({title,date,position,link,roles}){
+  return(
+
+
+  <div className='experience-container'>
+  <h5>{date}</h5>
+  <div className='experience-details'>
+      <a href={link}><h1>{title}</h1></a>
+      <h3>{position}</h3>
+      <ul>
+        {roles.map((role)=>{
+          return(
+            <li>{role}</li>
+          )
+        })}
 
       </ul>
   </div>
