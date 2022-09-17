@@ -23,7 +23,7 @@ export const projectsData =
         "shortdescription": "Resturant Website",
         "description": "This landing page was a freelance work I made for a Indian Theme Resturant located in Portugal. I tried experimenting with SCSS in this project and learned more about the design aspect of a website.",
         "image":Resturant,
-        "github":"",
+        "github":"https://github.com/lavizp/Indian-Resturant",
         "link":"",
         "techused": "React, SCSS",
         "platform": "Web",
