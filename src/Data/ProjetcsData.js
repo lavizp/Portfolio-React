@@ -8,20 +8,32 @@ export const projectsData =
     {
         "id":0,
         "title": "BooksGasm Nepal",
-        "shortdescription": "E-Commerse Website",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  ",
+        "shortdescription": "E-Commerce Website",
+        "description": "I developed a e-commerce website using React and Firebase. This project taught me a lot about the development process using react. I learned to create a CRUD application in React, learned not just the implimentation but also the working mechanism of the react development cycle. I also read some articles on making API calls faster and tried to impliment thoose techniques.",
         "image":Booksgasm,
         "github":"https://github.com/lavizp/BooksgasmNepalWebsite",
         "link":"",
-        "techused": "React, SCSS,Firebase",
+        "techused": "React, CSS,Firebase",
         "platform": "Web",
         "catogery":"E-Commerce Application"
     },
     {
         "id":1,
+        "title": "Indian Garden",
+        "shortdescription": "Resturant Website",
+        "description": "This landing page was a freelance work I made for a Indian Theme Resturant located in Portugal. I tried experimenting with SCSS in this project and learned more about the design aspect of a website.",
+        "image":Resturant,
+        "github":"",
+        "link":"",
+        "techused": "React, SCSS",
+        "platform": "Web",
+        "catogery":"Landing Page"
+    },
+    {
+        "id":2,
         "title": "Cube-Surfers",
         "shortdescription": "Hyper Casual Game",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  ",
+        "description": "This was the first coding project I developed. I re-created a famous mobile game and added extra features like endless mode to the game. I used the Unity Engiene and C# to develop this project. This project took a long time to create as I was in the learnig phase, but taught me a lot about developing a software/application from scratch. ",
         "image":CubeSurfers,
         "github":"",
         "link":"https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy&hl=en&gl=US",
@@ -29,16 +41,4 @@ export const projectsData =
         "platform": "Mobile",
         "catogery":"Mobile-Game"
     },
-    {
-        "id":2,
-        "title": "Indian Garden",
-        "shortdescription": "Resturant Website",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-        "image":Resturant,
-        "github":"",
-        "link":"",
-        "techused": "React, SCSS",
-        "platform": "Web",
-        "catogery":"Landing Page"
-    }
 ]
