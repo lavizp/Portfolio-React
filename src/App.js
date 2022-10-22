@@ -1,22 +1,20 @@
-import HomePage from "./Pages/HomePage/HomePage";
-import AboutPage from "./Pages/About/AboutPage";
 import { Route, Routes} from "react-router-dom";
-import ProjectsPage from "./Pages/Projects/ProjectsPage";
-import SingleProjectPage from "./Pages/SingleProjectPage/SingleProjectPage";
-import ExperiencePage from "./Pages/ExperiencePage/ExperiencePage";
-
+import { ThemeProvider } from "styled-components";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 function App() {
+  const theme = {
+    dark: "#090E16",
+    secondary: "#7B4AE2",
+    rose: "#C83267"
+  };
   return (
-    <Routes>
-      <Route path="/" element={<HomePage/>}/>
-      <Route path="/about" element={<AboutPage/>}/>
-      <Route path="/projects" element={<ProjectsPage/>}/>
-      <Route path="projects/:id" element={<SingleProjectPage/>}/>
-      <Route path="/experience" element={<ExperiencePage/>}/>
+    <ThemeProvider theme={theme}>
+      <Navbar/>
+      <Home/>
 
-
-    </Routes>
+    </ThemeProvider>
   );
 }
 
