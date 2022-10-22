@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projecsts from "./components/Projecsts";
 import Skills from "./components/Skills";
+import WorkExperience from "./components/WorkExperience";
 function App() {
   const theme = {
     dark: "#090E16",
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <Projecsts/>
       <Skills/>
+      <WorkExperience/>
     </ThemeProvider>
   );
 }

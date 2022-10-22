@@ -27,6 +27,8 @@ export default function Projecsts() {
         <ProjectTab/>
 
     </Container>
+    <a href='/wo' style={{display:"flex", justifyContent:"flex-end", marginRight:"80px",marginTop:"30px", textDecoration:"none", color:" rgba(123, 74, 226, 0.5)"}}>View More On Github</a>
+
     </>
   )
 }
