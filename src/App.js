@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projecsts from "./components/Projecsts";
+import Skills from "./components/Skills";
 function App() {
   const theme = {
     dark: "#090E16",
@@ -16,6 +17,7 @@ function App() {
       <Home/>
       <About/>
       <Projecsts/>
+      <Skills/>
     </ThemeProvider>
   );
 }
