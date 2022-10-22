@@ -6,26 +6,12 @@ import {HiDownload} from 'react-icons/hi'
 
 import { Line } from '../styled-components/Line'
 import { TitleTab } from '../styled-components/TitleTab'
-const HomeContainer = styled.div`
-    width: 90%;
-    margin: auto;
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`
-
+import { Container } from '../styled-components/Container'
+import { Title } from '../styled-components/Title'
 const NameContainer = styled.div`
     display: flex;
     flex-direction: column;
-    h1{
-        color: white;
-        font-weight: 800;
-        font-size: 52px;
-        line-height: 61px;
-        margin: 17px 0;
 
-    }
     p{
         font-weight: 400;
         font-size: 20px;
@@ -71,10 +57,10 @@ const DownloadCV = styled.button`
 export default function Home() {
   return (
     <>
-    <HomeContainer>
+    <Container>
         <NameContainer>
             <TitleTab>👋 Hello!!!</TitleTab>
-            <h1>Laviz <br/>Pandey</h1>
+            <Title>Laviz <br/>Pandey</Title>
             <p>Software Developer . </p>
             <div className='icons'>
                 <a href="/linkedin"><TiSocialLinkedinCircular size={38}/></a>
@@ -86,7 +72,7 @@ export default function Home() {
 
         </Avatar>
         <DownloadCV><HiDownload size={22} color="rgba(123, 74, 226, 0.5)"/>  Download CV</DownloadCV>
-    </HomeContainer>
+    </Container>
     <Line/>
     </>
   )

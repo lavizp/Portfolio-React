@@ -2,15 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { TitleTab } from '../styled-components/TitleTab'
 import { Line } from '../styled-components/Line'
-const HomeContainer = styled.div`
-    width: 90%;
-    margin: auto;
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`
-
+import { Container } from '../styled-components/Container'
+import { Title } from '../styled-components/Title'
 const Avatar = styled.div`
     height: 350px;
     width: 350px;
@@ -22,15 +15,6 @@ const DetailsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    h1{
-        color: white;
-        font-weight: 800;
-        font-size: 52px;
-        line-height: 61px;
-        margin: 17px 0;
-
-    }
     p{
         font-weight: 400;
         font-size: 20px;
@@ -46,11 +30,11 @@ const DetailsContainer = styled.div`
 export default function About() {
   return (
     <>
-    <HomeContainer>
+    <Container>
         <Avatar/>
         <DetailsContainer>
             <TitleTab>😀 About Me</TitleTab>
-            <h1>Hello, I am Laviz Pandey</h1>
+            <Title>Hello, I am Laviz Pandey</Title>
             <p style={{marginBottom:"10px"}}>I am a passionare software developer</p>
             <p>I specialise in building web applications and video games</p>
             <p>I have a strong passion for technology</p>
@@ -59,7 +43,7 @@ export default function About() {
 
 
         </DetailsContainer>
-    </HomeContainer>
+    </Container>
     <Line/>
     </>
   )

@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-
+import Projecsts from "./components/Projecsts";
 function App() {
   const theme = {
     dark: "#090E16",
@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
-
+      <Projecsts/>
     </ThemeProvider>
   );
 }
