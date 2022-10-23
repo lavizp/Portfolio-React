@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { TitleTab } from '../styled-components/TitleTab'
 import { Title } from '../styled-components/Title'
-
+import { projectsData } from '../Data/ProjetcsData'
 import ProjectTab from './ProjectTab'
 
 const Container = styled.div`
@@ -21,10 +21,7 @@ export default function Projecsts() {
         <Title>My Projects:</Title>
         </div>
     <Container>
-        <ProjectTab/>
-        <ProjectTab/>
-        <ProjectTab/>
-        <ProjectTab/>
+      {projectsData.map((item, index)=> <ProjectTab key = {index} dark={index/1 === 1? "":"new"}title={item.title} shortDescription = {item.shortdescription} image={item.image} github={item.github} link={item.link}/>)}
 
     </Container>
     <a href='/wo' style={{display:"flex", justifyContent:"flex-end", marginRight:"80px",marginTop:"30px", textDecoration:"none", color:" rgba(123, 74, 226, 0.5)"}}>View More On Github</a>

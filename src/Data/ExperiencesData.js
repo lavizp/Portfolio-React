@@ -1,7 +1,3 @@
-import Resturant from '../assets/Resturant.png'
-import CubeSurfers from '../assets/CubeSurfers.png'
-import Booksgasm from '../assets/Booksgasm.png'
-
 
 export const experienceData =
 [
@@ -14,7 +10,7 @@ export const experienceData =
             "Developed a mobile based casino style video game from scratch using the Unity Game Engiene",
             "Implimented a CRUD application to fetch and push to a Restful API.",
             "Learned about writting industry standard code which is redable and scalable.",
-            "Worked with C# and Unity."
+            "Worked with C# and Unity.",
         ]
     },
     {
@@ -24,7 +20,9 @@ export const experienceData =
         "position": "Graphic Designer",
         "roles":[
             "Designed The DRCFS website",
-            "Designed and developed social media posts"
+            "Designed and developed social media posts",
+            "Helped the communities social media page grow",
+            "Built a startup from scratch"
         ]
     }
    

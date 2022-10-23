@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { useNavigate, Link } from 'react-router-dom'
 const Container =  styled.div`
-    background-color: ${props=> props.variant? "none":"background: rgba(123, 74, 226, 0.1)"};
+    background-color: ${props=> props.variant === "new"? props.theme.dark :"rgba(123, 74, 226, 0.1);"};
     border-radius: 16px;
     border: 1px solid rgba(123, 74, 226, 0.5);
     display: flex;
@@ -36,26 +36,31 @@ const Button = styled.button`
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    &:hover{
+        opacity: 0.8;
+    }
 `
 
 const Image = styled.img`
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 60%;
     margin: auto;
     border-radius: 16px;
     object-fit: cover;
 `
 
-export default function ProjectTab() {
+export default function ProjectTab({dark, title, shortDescription, description, link, github, image}) {
+    const {navigate} =useNavigate();
   return (
-    <Container>
-        <h3>Task Apart</h3>
-        <p>A Task Managament Application to manage and track daily tasks.</p>
+    <Container variant={dark? "new": ""}>
+        <h3>{title}</h3>
+        <p>{shortDescription}</p>
         <div style={{display: "flex", gap:"10px", marginBottom:"20px"}}>
-            <Button color='green'>Live</Button>
-            <Button >Code</Button>
+                
+            {link && <Button color='green' onClick={()=>window.open(link)}>Live</Button>}
+            <Button  onClick={()=>window.open(github)}>Code</Button>
         </div>
-        <Image src="https://media.moddb.com/images/members/5/4550/4549205/duck.jpg"></Image>
+        <Image src={image}></Image>
     </Container>
   )
 }
