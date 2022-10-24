@@ -18,12 +18,20 @@ const Container = styled.div`
     margin: auto;
     margin-top: 100px;
 `
+
+const SkillsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+`
 export default function Skills() {
   return (
     <Container>
         <TitleTab>🤵 Skills</TitleTab>
         <Title>My Tech Stack:</Title>
-        <div style={{display: "flex", justifyContent:"space-between", alignItems: "center", gap:"30px"}}>
+        <SkillsContainer>
             <AiFillHtml5 color="rgba(123, 74, 226, 0.5)" size={80}/>
             <FaCss3Alt color="rgba(123, 74, 226, 0.5)" size={80}/>
             <SiJavascript color="rgba(123, 74, 226, 0.5)" size={70}/>
@@ -32,7 +40,7 @@ export default function Skills() {
             <SiUnity color="rgba(123, 74, 226, 0.5)" size={80}/>
             <AiFillGithub color="rgba(123, 74, 226, 0.5)" size={80}/>
 
-        </div>
+        </SkillsContainer>
     </Container>
   )
 }

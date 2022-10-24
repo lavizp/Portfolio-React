@@ -31,6 +31,18 @@ export const projectsData =
     },
     {
         "id":2,
+        "title": "Task-Apart",
+        "shortdescription": "Task Managament Website",
+        "description": "This was the first coding project I developed. I re-created a famous mobile game and added extra features like endless mode to the game. I used the Unity Engiene and C# to develop this project. This project took a long time to create as I was in the learnig phase, but taught me a lot about developing a software/application from scratch. ",
+        "image":CubeSurfers,
+        "github":"https://github.com/lavizp/task-apart",
+        "link":"",
+        "techused": "Unity, C#",
+        "platform": "Mobile",
+        "catogery":"Mobile-Game"
+    },
+    {
+        "id":3,
         "title": "Cube-Surfers",
         "shortdescription": "Hyper Casual Game",
         "description": "This was the first coding project I developed. I re-created a famous mobile game and added extra features like endless mode to the game. I used the Unity Engiene and C# to develop this project. This project took a long time to create as I was in the learnig phase, but taught me a lot about developing a software/application from scratch. ",
@@ -41,16 +53,5 @@ export const projectsData =
         "platform": "Mobile",
         "catogery":"Mobile-Game"
     },
-    {
-        "id":3,
-        "title": "Task-Apart",
-        "shortdescription": "Task Managament Website",
-        "description": "This was the first coding project I developed. I re-created a famous mobile game and added extra features like endless mode to the game. I used the Unity Engiene and C# to develop this project. This project took a long time to create as I was in the learnig phase, but taught me a lot about developing a software/application from scratch. ",
-        "image":CubeSurfers,
-        "github":"",
-        "link":"https://play.google.com/store/apps/details?id=com.gamedevcluub.moneyy&hl=en&gl=US",
-        "techused": "Unity, C#",
-        "platform": "Mobile",
-        "catogery":"Mobile-Game"
-    },
+
 ]

@@ -14,20 +14,30 @@ const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+    display: none;
+  }
 `
 const NavRight = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 50%;
+    @media (max-width: 1024px) {
+      width: 65%;
+
+
+    
+  }
 `
-const NavItem = styled.p`
+const NavItem = styled.a`
     color: ${props=> props.selected? "rgba(123, 74, 226, 0.5)":"rgba(255, 255, 255, 0.5)"};
     opacity: ${props=> props.selected? "0.9":"0.5"};
-
+    text-decoration: none;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    cursor: pointer;
 `
 export default function Navbar() {
   return (
@@ -35,12 +45,13 @@ export default function Navbar() {
         <FaMeetup color="white" size={45}/>
         <NavRight>
 
-        <NavItem selected>Home</NavItem>
-        <NavItem>About</NavItem>
-        <NavItem>Projects</NavItem>
-        <NavItem>Certifications</NavItem>
-        <NavItem>Skills</NavItem>
-        <NavItem>Contact</NavItem>
+        <NavItem href="#home"selected>Home</NavItem>
+        <NavItem href="#about">About</NavItem>
+        <NavItem href='#projects'>Projects</NavItem>
+        <NavItem href='#experience'>Experience</NavItem>
+
+        <NavItem href='#certifications'>Certifications</NavItem>
+        <NavItem href='#contact'>Contact</NavItem>
 
 
 

@@ -4,11 +4,17 @@ import { TitleTab } from '../styled-components/TitleTab'
 import { Line } from '../styled-components/Line'
 import { Container } from '../styled-components/Container'
 import { Title } from '../styled-components/Title'
-const Avatar = styled.div`
+import Laviz from "../assets/Laviz.png"
+const Avatar = styled.img`
     height: 350px;
     width: 350px;
     border-radius: 100%;
+    object-fit: contain;
     background-color: ${props=>props.theme.secondary};
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    
+  }
 `
 const DetailsContainer = styled.div`
     width: 50%;
@@ -21,17 +27,24 @@ const DetailsContainer = styled.div`
         line-height: 23px;
         display: flex;
         align-items: center;
-        text-align: justify;
         margin: 0;
         color: rgba(255, 255, 255, 0.5);
     }
+    @media (max-width: 768px) {
+        width: 80%;
+        margin-top: 30px;
+        align-items: center;
+
+    
+  }
 
 `
 export default function About() {
   return (
     <>
+    <div id="about"></div>
     <Container>
-        <Avatar/>
+        <Avatar src={Laviz}/>
         <DetailsContainer>
             <TitleTab>😀 About Me</TitleTab>
             <Title>Hello, I am Laviz Pandey</Title>

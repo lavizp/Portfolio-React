@@ -7,6 +7,8 @@ import Projecsts from "./components/Projecsts";
 import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
 import Connect from "./components/Connect";
+import Certifications from "./components/Certifications";
+import Footer from "./components/Footer";
 function App() {
   const theme = {
     dark: "#090E16",
@@ -21,7 +23,9 @@ function App() {
       <Projecsts/>
       <Skills/>
       <WorkExperience/>
+      <Certifications/>
       <Connect/>
+      <Footer/>
     </ThemeProvider>
   );
 }

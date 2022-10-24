@@ -12,17 +12,35 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   row-gap: 50px;
   flex-wrap: wrap;
+    
+`
+
+const WorkContainer = styled.div`
+  margin: auto;
+  width: 90%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+  text-align: center;
+
+    align-items: center;
+
+
+    
+  }
 `
 export default function WorkExperience() {
   return (
     <>
-    <div style={{margin: "auto",width:"90%", marginTop:"100px"}}>
+    <div id="experience"></div>
+    <WorkContainer>
         <TitleTab>💼 Experience</TitleTab>
         <Title>Current/ Previous Positions:</Title>
-    </div>
+    </WorkContainer>
     <Container>
       {experienceData.map((item)=><Work key= {item.id} company={item.company} date={item.date} position={item.position} roles={item.roles}/>)}
 

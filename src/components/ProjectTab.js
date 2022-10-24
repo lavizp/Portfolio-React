@@ -58,7 +58,7 @@ export default function ProjectTab({dark, title, shortDescription, description, 
         <div style={{display: "flex", gap:"10px", marginBottom:"20px"}}>
                 
             {link && <Button color='green' onClick={()=>window.open(link)}>Live</Button>}
-            <Button  onClick={()=>window.open(github)}>Code</Button>
+            {github && <Button  onClick={()=>window.open(github)}>Code</Button>}
         </div>
         <Image src={image}></Image>
     </Container>

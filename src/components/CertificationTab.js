@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const Container = styled.div`
-    width: 400px;
-    min-height: 300px;
+    width: 200px;
+    height: 350px;
     border-radius: 16px;
     background: rgba(123, 74, 226, 0.1);
     padding: 20px 50px;
@@ -17,35 +18,32 @@ const Container = styled.div`
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: rgba(123, 74, 226, 1);
+        color: rgba(255, 255, 255, 0.5);
+        
 
     };
-    li{
+    a{
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: rgba(255, 255, 255, 0.5);
-
-    }
-    h5{
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: right;
-        color: #7B4AE2;
+        color: rgba(123, 74, 226, 1);
+        text-decoration: none;
     }
 `
-export default function Work({company, date, roles, position}) {
+const Image = styled.img`
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    border-radius: 16px;
+    object-fit: cover;
+`
+export default function CertificationTab({title, description, link,image}) {
   return (
     <Container>
-        <h2>{position}</h2>
-        <p>{company}</p>      
-        <ul>
-            {roles.map((role,index)=> <li key={index}>{role}</li>)}
-
-        </ul>
-        <h5>{date}</h5>
-
+        <Image src={image}/>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        {link &&<a href={link} target="blank">View</a>}
     </Container>
   )
 }
