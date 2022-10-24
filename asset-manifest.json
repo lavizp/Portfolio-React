@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.31e829b6.css",
-    "main.js": "/static/js/main.19d07c07.js",
+    "main.css": "/static/css/main.884a526a.css",
+    "main.js": "/static/js/main.0bcded61.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
     "static/media/Laviz.png": "/static/media/Laviz.a796d61af08f875f121b.png",
+    "static/media/cs.png": "/static/media/cs.ed6b134499cc4b380da7.png",
     "static/media/Resturant.png": "/static/media/Resturant.89c4ae5a749aacc0ad27.png",
     "static/media/Booksgasm.png": "/static/media/Booksgasm.9588a2e0ad75c9795c4d.png",
-    "static/media/LavizPandeyCV.pdf": "/static/media/LavizPandeyCV.bf987d9c9125e9c60ec4.pdf",
+    "static/media/LavizPandeyCV.pdf": "/static/media/LavizPandeyCV.ae33929d8a5d7a46c71d.pdf",
+    "static/media/MIC.JPG": "/static/media/MIC.4c61b2f5e0908132ad00.JPG",
     "static/media/CubeSurfers.png": "/static/media/CubeSurfers.5afdfec632bc68f1f819.png",
+    "static/media/NIO.JPG": "/static/media/NIO.e10331e62c4ea449b85c.JPG",
+    "static/media/Avatar.JPG": "/static/media/Avatar.670ce6dfec5d42cfc8e4.JPG",
     "index.html": "/index.html",
-    "main.31e829b6.css.map": "/static/css/main.31e829b6.css.map",
-    "main.19d07c07.js.map": "/static/js/main.19d07c07.js.map",
+    "main.884a526a.css.map": "/static/css/main.884a526a.css.map",
+    "main.0bcded61.js.map": "/static/js/main.0bcded61.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31e829b6.css",
-    "static/js/main.19d07c07.js"
+    "static/css/main.884a526a.css",
+    "static/js/main.0bcded61.js"
   ]
 }
