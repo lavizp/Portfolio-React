@@ -8,6 +8,7 @@ import { Line } from '../styled-components/Line'
 import { TitleTab } from '../styled-components/TitleTab'
 import { Container } from '../styled-components/Container'
 import { Title } from '../styled-components/Title'
+import LavizAvarar from "../assets/Avatar.JPG"
 const NameContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -42,11 +43,12 @@ const NameContainer = styled.div`
   }
 `
 
-const Avatar = styled.div`
+const Avatar = styled.img`
     height: 350px;
     width: 350px;
     border-radius: 100%;
     background-color: ${props=>props.theme.secondary};
+    object-fit: cover;
     @media (max-width: 768px) {
     order: 0;
     margin-top: 30px;
@@ -89,9 +91,8 @@ export default function Home() {
                 <a href="https://twitter.com/lavizpandey" target="blank"><AiFillTwitterCircle size={38}/></a>
             </div>
         </NameContainer>
-        <Avatar>
+        <Avatar src={LavizAvarar}/>
 
-        </Avatar>
         <DownloadCV href={Resume} target="_blank"><HiDownload size={22} color="rgba(123, 74, 226, 0.5)"/>  Download CV</DownloadCV>
     </Container>
     <Line/>

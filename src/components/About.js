@@ -52,7 +52,7 @@ export default function About() {
             <p>I specialise in building web applications and video games</p>
             <p>I have a strong passion for technology</p>
             <p style={{marginBottom:"10px"}}>I have proven experience with React JS and Unity 3D</p>
-            <p>K lekhne k lekhne bhayo haha</p>
+            <p>I work with C# and Javascript</p>
 
 
         </DetailsContainer>
