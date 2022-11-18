@@ -9,6 +9,9 @@ import { TitleTab } from '../styled-components/TitleTab'
 import { Container } from '../styled-components/Container'
 import { Title } from '../styled-components/Title'
 import LavizAvarar from "../assets/Avatar.JPG"
+import LavizFace from "../assets/lavizface.png"
+
+
 const NameContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -57,16 +60,16 @@ const Avatar = styled.img`
 `
 const DownloadCV = styled.a`
     background: none;
-    border: 1px solid rgba(123, 74, 226, 0.5);
+    border: 2px solid rgba(123, 74, 226, 0.5);
     border-radius: 16px;
     padding: 10px 10px;
     color: rgba(123, 74, 226, 0.5);
     text-align: center ;
     display: flex;
     align-items: center;
-    font-weight: 600;
-     font-size: 16px;
-    line-height: 19px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
     text-decoration: none;
     @media (max-width: 768px) {
     order: 3;

@@ -62,7 +62,7 @@ export default function Connect() {
       <ContactContainer id="contact">
 
           <TitleTab>✨ Contact</TitleTab>
-          <Title>Lets have a Conversation:</Title>
+          <Title>Check out my Links:</Title>
         </ContactContainer>
     <Container>
       <Button href='mailto: pandeylaviz@gmail.com'><BiMailSend size={30}/>Emai</Button>

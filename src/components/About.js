@@ -5,6 +5,8 @@ import { Line } from '../styled-components/Line'
 import { Container } from '../styled-components/Container'
 import { Title } from '../styled-components/Title'
 import Laviz from "../assets/Laviz.png"
+import LavizFace from "../assets/lavizface.png"
+
 const Avatar = styled.img`
     height: 350px;
     width: 350px;

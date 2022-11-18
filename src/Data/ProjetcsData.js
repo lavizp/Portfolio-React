@@ -1,7 +1,7 @@
 import Resturant from '../assets/Resturant.png'
 import CubeSurfers from '../assets/CubeSurfers.png'
 import Booksgasm from '../assets/Booksgasm.png'
-
+import TaskApart from '../assets/taskapart.JPG'
 
 export const projectsData =
 [
@@ -34,7 +34,7 @@ export const projectsData =
         "title": "Task-Apart",
         "shortdescription": "Task Managament Website",
         "description": "This was the first coding project I developed. I re-created a famous mobile game and added extra features like endless mode to the game. I used the Unity Engiene and C# to develop this project. This project took a long time to create as I was in the learnig phase, but taught me a lot about developing a software/application from scratch. ",
-        "image":CubeSurfers,
+        "image":TaskApart,
         "github":"https://github.com/lavizp/task-apart",
         "link":"",
         "techused": "Unity, C#",
