@@ -3,6 +3,7 @@ import CubeSurfers from '../assets/CubeSurfers.png'
 import Booksgasm from '../assets/Booksgasm.png'
 import TaskApart from '../assets/taskapart.JPG'
 
+
 export const projectsData =
 [
     {
