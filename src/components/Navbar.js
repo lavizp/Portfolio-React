@@ -39,10 +39,15 @@ const NavItem = styled.a`
     line-height: 21px;
     cursor: pointer;
 `
+const NavTitle = styled.h2`
+  color: white;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+`
 export default function Navbar() {
   return (
     <NavContainer>
-        <FaMeetup color="white" size={45}/>
+        <NavTitle>LP</NavTitle>
         <NavRight>
 
         <NavItem href="#home"selected>Home</NavItem>
