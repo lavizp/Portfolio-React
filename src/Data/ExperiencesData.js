@@ -5,7 +5,7 @@ export const experienceData =
         "id":0,
         "company": "Pebble Technologies",
         "date": "March2022 - Present",
-        "position": "C# Game Programmer",
+        "position": "Junior Software Developer",
         "roles":[
             "Developed a mobile based casino style video game from scratch using the Unity Game Engiene",
             "Implimented a CRUD application to fetch and push to a Restful API.",
