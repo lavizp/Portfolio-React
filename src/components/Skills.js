@@ -9,6 +9,10 @@ import {SiJavascript} from 'react-icons/si'
 import {AiFillGithub} from 'react-icons/ai'
 import {SiUnity} from 'react-icons/si'
 import {TbCSharp} from 'react-icons/tb'
+import {FaNode} from 'react-icons/fa'
+import {DiMongodb} from 'react-icons/di'
+
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,7 +25,7 @@ const Container = styled.div`
 
 const SkillsContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
@@ -36,9 +40,11 @@ export default function Skills() {
             <FaCss3Alt color="rgba(123, 74, 226, 0.5)" size={80}/>
             <SiJavascript color="rgba(123, 74, 226, 0.5)" size={70}/>
             <FaReact color="rgba(123, 74, 226, 0.5)" size={80}/>
+            <FaNode color="rgba(123, 74, 226, 0.5)" size={80}/>
+            <DiMongodb color="rgba(123, 74, 226, 0.5)" size={80}/>
+            <AiFillGithub color="rgba(123, 74, 226, 0.5)" size={80}/>
             <TbCSharp color="rgba(123, 74, 226, 0.5)" size={80}/>
             <SiUnity color="rgba(123, 74, 226, 0.5)" size={80}/>
-            <AiFillGithub color="rgba(123, 74, 226, 0.5)" size={80}/>
 
         </SkillsContainer>
     </Container>
