@@ -8,7 +8,7 @@ const AboutSection = () => {
         paddingX={["20px", "20px", "74px"]}
         paddingY="100px"
         flexDir="column"
-        gap="12px"
+        gap="50px"
         justifyContent="space-between"
         minWidth="450px"
         flex={1}
