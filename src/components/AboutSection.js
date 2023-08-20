@@ -3,13 +3,15 @@ import { Box, Image, Text, Flex } from "@chakra-ui/react";
 
 const AboutSection = () => {
   return (
-    <Flex bg="peach" color="black">
+    <Flex bg="peach" color="black" wrap="wrap">
       <Flex
         paddingX={["20px", "20px", "74px"]}
         paddingY="100px"
         flexDir="column"
         gap="12px"
         justifyContent="space-between"
+        minWidth="450px"
+        flex={1}
       >
         <Box>
           <Text fontSize="55px" fontWeight="700">
@@ -31,12 +33,14 @@ const AboutSection = () => {
           <Text>More about me</Text>
         </Box>
       </Flex>
-      <Image
-        src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
-        width="720px"
-        height="600px"
-        objectFit="cover"
-      ></Image>
+      <Box display={["none", "none", "none", "block"]}>
+        <Image
+          src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+          width="100%"
+          height="100%"
+          objectFit="cover"
+        ></Image>
+      </Box>
     </Flex>
   );
 };
