@@ -1,7 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
-import HeroSection from "./components/HeroSection";
-import WorkSection from "./components/WorkSection";
-import AboutSection from "./components/AboutSection";
+import HeroSection from "./components/HomePage/HeroSection";
+import WorkSection from "./components/HomePage/WorkSection";
+import AboutSection from "./components/HomePage/AboutSection";
+import SkillSection from "./components/HomePage/SkillSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <HeroSection />
       <WorkSection />
       <AboutSection />
+      <SkillSection />
     </>
   );
 }
