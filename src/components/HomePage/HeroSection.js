@@ -21,6 +21,7 @@ const HeroSection = () => {
               width="700px"
               height="600px"
               objectFit="cover"
+              alt="hero-image"
             />
           </Box>
           <Box
