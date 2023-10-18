@@ -4,6 +4,7 @@ import WorkSection from "./components/HomePage/WorkSection";
 import AboutSection from "./components/HomePage/AboutSection";
 import SkillSection from "./components/HomePage/SkillSection";
 import ProjectSection from "./components/HomePage/Projects/ProjectSection";
+import GithubSection from "./components/HomePage/GithubSection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutSection />
       <SkillSection />
       <ProjectSection />
+      <GithubSection />
     </>
   );
 }
