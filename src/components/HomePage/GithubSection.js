@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import gihtubImage from "../../assets/github.png";
 
 const GithubSection = () => {
   return (
@@ -23,6 +24,13 @@ const GithubSection = () => {
       >
         <u>Follow me on Github</u>
       </Text>
+      <Image
+        src={gihtubImage}
+        objectFit="fill"
+        alt="hero-image"
+        borderRadius={"20px"}
+        marginTop={"24px"}
+      />
     </Box>
   );
 };

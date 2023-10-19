@@ -1,21 +1,15 @@
-import { Box, Text } from "@chakra-ui/react";
-import HeroSection from "./components/HomePage/HeroSection";
-import WorkSection from "./components/HomePage/WorkSection";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 import AboutSection from "./components/HomePage/AboutSection";
-import SkillSection from "./components/HomePage/SkillSection";
 import ProjectSection from "./components/HomePage/Projects/ProjectSection";
-import GithubSection from "./components/HomePage/GithubSection";
 
 function App() {
   return (
-    <>
-      <HeroSection />
-      <WorkSection />
-      <AboutSection />
-      <SkillSection />
-      <ProjectSection />
-      <GithubSection />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutSection />} />
+      <Route path="/projects" element={<ProjectSection />} />
+    </Routes>
   );
 }
 

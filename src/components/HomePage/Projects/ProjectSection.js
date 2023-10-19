@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
-
+import { useNavigate } from "react-router-dom";
 const ProjectSection = () => {
+  const navigate = useNavigate();
   return (
     <Box paddingX={["20px", "20px", "74px"]} paddingY="150px">
       <Flex
@@ -38,6 +39,7 @@ const ProjectSection = () => {
             borderColor={"primary"}
             borderRadius={0}
             marginTop={"24px"}
+            onClick={() => navigate("/projects")}
           >
             More Projects
           </Button>

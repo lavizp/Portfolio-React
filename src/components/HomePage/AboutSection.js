@@ -1,7 +1,10 @@
 import React from "react";
 import { Box, Image, Text, Flex } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
   return (
     <Flex bg="peach" color="black" wrap="wrap">
       <Flex
@@ -29,6 +32,7 @@ const AboutSection = () => {
           borderBottom="1px solid black"
           w="fit-content"
           cursor="pointer"
+          onClick={() => navigate("/about")}
         >
           <Text>More about me</Text>
         </Box>

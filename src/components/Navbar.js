@@ -72,9 +72,13 @@ const Navbar = () => {
               padding="32px 24px"
               bg="primary"
             >
-              <Link to="/experience">
-                <Text>Contact</Text>
-              </Link>
+              <a
+                href="https://github.com/lavizp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Text>Github</Text>
+              </a>
             </Box>
           </Box>
         )}
@@ -120,11 +124,15 @@ const Navbar = () => {
             alignItems="center"
             padding="12px 24px"
             bg="primary"
-            _hover={{ bg: "gray" }}
+            // _hover={{ bg: "gray" }}
           >
-            <Link to="/experience">
-              <Text>Contact</Text>
-            </Link>
+            <a
+              href="https://github.com/lavizp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Text>Github</Text>
+            </a>
           </Box>
         </Box>
       )}
