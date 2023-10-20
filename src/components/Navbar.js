@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <Box
-      position="absolute"
+      position={"absolute"}
       top={0}
       display="flex"
       flexDir="column"

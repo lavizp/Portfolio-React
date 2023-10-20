@@ -1,7 +1,7 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text, Flex } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Navbar";
-
+import me from "../../assets/me1.png";
 const HeroSection = () => {
   return (
     <Box height={["auto", "auto", "600px", "800px"]}>
@@ -17,8 +17,9 @@ const HeroSection = () => {
             justifyContent="flex-start"
           >
             <Image
-              src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg"
-              width="700px"
+              // opacity={"0.8"}
+              src={me}
+              width="600px"
               height="600px"
               objectFit="cover"
               alt="hero-image"
@@ -33,26 +34,22 @@ const HeroSection = () => {
             display="flex"
             alignItems="center"
             justifyContent={["center", "center", "center", "flex-end"]}
-            padding="48px 20px"
+            padding="24px"
           >
             <Box zIndex={5} fontSize={["24px", "36px", "48px", "76px"]}>
-              <Text fontWeight="700" lineHeight="normal">
-                I'm Laviz Pandey
-              </Text>
-              <Text fontWeight="700" lineHeight="normal">
-                A software developer
-              </Text>
-              <Text fontWeight="700" color="lightGrey" lineHeight="normal">
-                based in Nepal
-              </Text>
               <Text
                 fontSize={["8px", "12px", "16px", "18px"]}
                 fontWeight="400"
                 marginTop="32px"
+                color={"lightGray"}
               >
-                I'm probably the most passionate designer you will ever get to
-                work with. If you have a great project that needs some amazing
-                skills, I'm your guy.
+                Design . Build . Improve
+              </Text>
+              <Text fontWeight="700" lineHeight="normal">
+                I'm Laviz Pandey
+              </Text>
+              <Text fontWeight="600" lineHeight="normal">
+                A software developer
               </Text>
             </Box>
           </Box>
