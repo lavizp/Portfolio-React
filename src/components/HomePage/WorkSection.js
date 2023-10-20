@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
-
+import { experienceData } from "../../Data/ExperiencesData";
 const WorkSection = () => {
   return (
     <Box paddingX={["20px", "20px", "74px"]} paddingY="150px">
@@ -12,52 +12,32 @@ const WorkSection = () => {
           Companies I have worked for in the past.
         </Text>
       </Box>
-      <Flex justifyContent="space-between" flexWrap="wrap">
-        <Box width="366px" minWidth="250px">
-          <Text fontSize="117px" fontWeight="400" color="lightGrey">
-            01
-          </Text>
-          <Text fontSize="24px" fontWeight="700">
-            <Box as="span" color="green">
-              Google, {""}
+      <Flex
+        justifyContent={
+          experienceData.length > 2 ? "space-between" : "flex-start"
+        }
+        flexWrap="wrap"
+        gap={experienceData.length > 2 ? "0" : "24px"}
+      >
+        {experienceData.map((item) => {
+          return (
+            <Box width="366px" minWidth="250px" key={item.id}>
+              <Text fontSize="117px" fontWeight="400" color="lightGrey">
+                {item.id}
+              </Text>
+              <Text fontSize="24px" fontWeight="700">
+                <Box as="span" color={item.color}>
+                  {item.company}{" "}
+                </Box>
+                {","}
+                {item.position}
+              </Text>
+              <Text fontSize="16px" fontWeight="400">
+                {item.roles}
+              </Text>
             </Box>
-            Interaction Designer
-          </Text>
-          <Text fontSize="16px" fontWeight="400">
-            I currently am the lead designer on the interaction design team for
-            Google Play.
-          </Text>
-        </Box>
-        <Box width="366px" minWidth="250px">
-          <Text fontSize="117px" fontWeight="400" color="lightGrey">
-            01
-          </Text>
-          <Text fontSize="24px" fontWeight="700">
-            <Box as="span" color="green">
-              Google, {""}
-            </Box>
-            Interaction Designer
-          </Text>
-          <Text fontSize="16px" fontWeight="400">
-            I currently am the lead designer on the interaction design team for
-            Google Play.
-          </Text>
-        </Box>
-        <Box width="366px" minWidth="250px">
-          <Text fontSize="117px" fontWeight="400" color="lightGrey">
-            01
-          </Text>
-          <Text fontSize="24px" fontWeight="700">
-            <Box as="span" color="green">
-              Google, {""}
-            </Box>
-            Interaction Designer
-          </Text>
-          <Text fontSize="16px" fontWeight="400">
-            I currently am the lead designer on the interaction design team for
-            Google Play.
-          </Text>
-        </Box>
+          );
+        })}
       </Flex>
     </Box>
   );

@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import me from "../../assets/me1.png";
 const HeroSection = () => {
   return (
-    <Box height={["auto", "auto", "600px", "800px"]}>
+    <Box height={["auto", "auto", "700px", "800px"]}>
       <Box position="relative">
         <Navbar />
         <Box position="relative">
@@ -17,7 +17,6 @@ const HeroSection = () => {
             justifyContent="flex-start"
           >
             <Image
-              // opacity={"0.8"}
               src={me}
               width="600px"
               height="600px"
